@@ -6,10 +6,12 @@ import { useEffect, useState } from "react";
 import { navigation } from "../contants/navigation";
 
 const Header = () => {
-  const location = useLocation()
-  const removeSpace = location.search.slice(3).split("%20").join(" ")
+  const location = useLocation();
+  const removeSpace = location.search.slice(3).split("%20").join(" ");
   const [searchInput, setSearchInput] = useState(removeSpace);
   const navigate = useNavigate();
+
+  console.log("");
 
   useEffect(() => {
     if (searchInput) {
