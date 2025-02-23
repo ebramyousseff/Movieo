@@ -1,4 +1,4 @@
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/logo.png";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import user from "../assets/user.png";
 import { IoSearch } from "react-icons/io5";
