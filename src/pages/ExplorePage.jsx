@@ -49,7 +49,7 @@ const ExplorePage = () => {
   }, []);
   return (<div className="pt-16">
     <div className="container mx-auto">
-      <h3 className="capitalize text-lg font-semibold"> popular {params.expole} Show</h3>
+      <h3 className="capitalize text-lg font-semibold"> popular {params.explore} Show</h3>
     
       <div className="grid lg:grid-cols-5  md:grid-cols-3 sm:grid-cols-1[repeat(auto-fit,230px)] justify-center gap-6">
         {

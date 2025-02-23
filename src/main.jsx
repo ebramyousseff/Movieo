@@ -11,7 +11,6 @@ axios.defaults.baseURL = "https://api.themoviedb.org/3";
 axios.defaults.headers.common["Authorization"] = `Bearer ${
   import.meta.env.VITE_ACCESS_TOKEN
 }`;
-console.log(import.meta.env.VITE_ACCESS_TOKEN)
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

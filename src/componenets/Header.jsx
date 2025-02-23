@@ -8,11 +8,9 @@ import { navigation } from "../contants/navigation";
 const Header = () => {
   const location = useLocation()
   const removeSpace = location.search.slice(3).split("%20").join(" ")
-  console.log("removeSpace" , removeSpace)
   const [searchInput, setSearchInput] = useState(removeSpace);
   const navigate = useNavigate();
 
-  console.log("location")
   useEffect(() => {
     if (searchInput) {
       navigate(`/search?q=${searchInput}`);
